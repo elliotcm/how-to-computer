@@ -235,6 +235,21 @@ Phew.  If you were following along you'll know that encoding process was a massi
 pain to do by hand and quite error-prone.  Later on I'll show you how to use a
 programming language to get a computer to do it for you.
 
+### Decoding
+
+So what does Dave from accounting do when he wants to read your good tweet?  Well,
+decoding (verb) is the inverse of encoding (verb), and uses the same encoding (noun) to
+do it.
+
+First you give him your encoding, i.e. the map showing what characters each 7-bit
+binary combination represents, and tell him that each character is always 7 bits long.
+
+Dave then splits your 154 bits into 22 groups of 7 and checks the table to get a
+character for each.
+
+That's really it.  The tricky part is knowing the structure of the data (a long
+string of 7-bit characters) and how to convert it into something useful.
+
 ### Other character encodings (noun)
 
 Since an encoding is arbitrary and assignments are picked by whoever makes it,
