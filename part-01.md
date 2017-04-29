@@ -43,6 +43,13 @@ take these complex sensory marvels and represent them using only a mountain of
 1s and 0s.  The process of doing so is called `encoding`.  Encoding is a complicated
 topic but it's important so I'll keep it as brief as possible.
 
+Beware that "encoding" can mean three different things here:
+1. verb, the process of converting something into its binary representation
+2. noun, the set of rules used to do the conversion
+3. noun, the binary representation itself
+
+When used as a noun here I'm talking about meaning 2.
+
 <aside>Quick aside, encoding and encryption are different things.  Encryption is about
 disguising things, not representing them.  We'll get to it later.</aside>
 
@@ -60,7 +67,7 @@ same encoding for them each time. That leaves us with 13 unique characters,
 but a bit can only represent up to two different things.  We'll have to use more
 than one bit in concert to encode our 13 characters.
 
-While we're at it, we're likely to use this `character encoding` again for other
+While we're at it, we're likely to use this `character encoding` (noun) again for other
 cool tweets so we may as well include the rest of the alphabet in upper and lowercase,
 plus the numbers and any other characters
 we think might be helpful like commas and hyphens.
@@ -93,7 +100,7 @@ have doubles.  Continue on this path and you'll see that 6 bits give you enough 
 things and 7 gives you 128.  We've got 96 characters to represent so we'll have to go for
 7 bits.  I'm sure we can fill the extra space in later.
 
-### Our 7-bit character encoding
+### Our 7-bit character encoding (noun)
 
 We know now that we have 7 bits with which to encode each of the 96 characters
 we want to represent.  That means every combination of 0 and 1 between 0000000
@@ -166,7 +173,7 @@ system much like our normal base 10 you can represent numbers directly in binary
 Here we're encoding the **character** version of the numbers, i.e. the way they're
 written, not their pure mathematical versions.  We'll get to those later.
 
-The character encoding is arbitrary and picks up from where we left off with the
+The character encoding (noun) is arbitrary and picks up from where we left off with the
 letters, which is why the character `0` here is `0110100` rather than `0000000`
 as you might expect.
 ```
@@ -193,7 +200,7 @@ Finished?  Congratulations.  You've written a character encoding.
 
 ### Encoding our tweet
 
-Now we need to convert our human letters into cold computer bits using our encoding.
+Now we need to convert our human letters into cold computer bits using our encoding (noun).
 
 ```
 0100011   I
@@ -224,11 +231,11 @@ The computer can't comprehend all the human junk here so let's string all these
 together into one big binary blob:
 `0100011011111000000000010011000010001111100000000011111000100110000000001001000100110011000011111000100100000000000110100000110010110000100000000100000111`
 
-Phew.  If you were following along you'll know that encoding was a massive
+Phew.  If you were following along you'll know that encoding process was a massive
 pain to do by hand and quite error-prone.  Later on I'll show you how to use a
 programming language to get a computer to do it for you.
 
-### Other character encodings
+### Other character encodings (noun)
 
 Since an encoding is arbitrary and assignments are picked by whoever makes it,
 there will often be multiple ways of encoding the same thing.
@@ -256,7 +263,7 @@ of the world.
 1. Computers can only work with 0s and 1s.  We call this `binary`.
 2. If you need to represent more than 2 things at once you need more than one bit
   to do it.
-3. Representing pieces of a real-world thing via small chunks of binary is called
+3. Converting pieces of a real-world thing to small chunks of binary is called
   `encoding` (verb).  Going from binary to the real world is called `decoding`.
 4. A set of arbitrary rules mapping those small chunks of binary to the pieces of
   the real world is called an `encoding` (noun).
