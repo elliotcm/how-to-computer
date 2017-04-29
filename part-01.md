@@ -34,7 +34,7 @@ matter as long as you can tell a 1 from a 0.
 So we've only got 0 or 1 to work with for technical reasons, well that's a sucky
 limitation, but the advantage is we have an awful lot of them.  The computer that
 first got us to the moon had around 192,000 of them.  A mid-range 2017 iphone has
-1,024,000,000,000 to play with.  But what do we use them for?
+1,040,000,000,000 to play with.  But what do we use them for?
 
 ## Encoding
 
